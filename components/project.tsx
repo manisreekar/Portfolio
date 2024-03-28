@@ -3,7 +3,7 @@
 import { useRef } from "react";
 import { projectsData } from "@/lib/data";
 import { motion, useScroll, useTransform } from "framer-motion";
-
+import Image from "next/image";
 type ProjectProps = (typeof projectsData)[number];
 
 export default function Project({
@@ -47,7 +47,10 @@ export default function Project({
           </ul>
         </div>
 
-        <img
+        <Image
+          height="192"
+          width="192"
+          alt="Project Images"
           src={imageUrl}
           className="bg-white border-[0.4rem] border-white absolute hidden sm:block top-8 -right-40 w-[28.25rem] rounded-t-lg shadow-2xl
         transition 

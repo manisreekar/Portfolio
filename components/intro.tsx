@@ -10,6 +10,7 @@ import { TypeAnimation } from "react-type-animation";
 import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
 import { images } from "@/lib/data";
+import Image from "next/image";
 
 export default function Intro() {
   const { ref } = useSectionInView("Home", 0.5);
@@ -69,15 +70,15 @@ export default function Intro() {
             }}
             className="flex items-center justify-center overflow-hidden"
           >
-            <img
+            <Image
               src={image}
               alt={`Image ${index}`}
-              // className="object-cover w-24 h-24 rounded-full sm:w-20 sm:h-20 md:w-24 md:h-24"
-              // Responsive image sizes
-              className={` ${
+              width="192"
+              height="192"
+              className={`object-cover sm:w-20 sm:h-20 md:w-24 md:h-24  ${
                 index === centerIndex
-                  ? "object-cover w-19 h-19 rounded-full sm:w-20 sm:h-20 md:w-24 md:h-24 border-[0.15rem] border-white"
-                  : "object-cover w-22 h-22 sm:w-20 sm:h-20 md:w-24 md:h-24"
+                  ? " w-19 h-19 rounded-full border-[0.15rem] border-white"
+                  : " w-22 h-22 "
               }`}
             />
           </motion.div>
@@ -91,14 +92,14 @@ export default function Intro() {
               "",
               2100,
               "Hello, I'm Mani Sreekar.",
-              1200,
+              1000,
               "I am Software Developer.",
               1200,
-              "I enjoy building applications.",
-              1200,
+              "I love building applications!",
+              1000,
             ]}
             wrapper="span"
-            speed={30}
+            speed={35}
             className="font-bold text-6x1"
             repeat={Infinity}
           />

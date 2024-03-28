@@ -134,7 +134,7 @@ export const projectsData = [
     description:
       "I-Split, A web application designed to facilitate the splitting of items in uploaded invoice among group members. It enables each member to select their items from a shared invoice, and it calculates each person’s share of the total cost.",
     tags: ["React", "Next.js", "PostgreSQL", "Tailwind"],
-    imageUrl: "./nextjs_icon.png",
+    imageUrl: "/nextjs_icon.png",
   },
   {
     title: "E-Platform (2023-2024)",
@@ -148,7 +148,7 @@ export const projectsData = [
     description:
       "Created a dashboard using Spring Boot to track reported data of confirmed Coronavirus infections COVID-19 (2019-nCoV) around the world. Used dependencies thymelead , Spring Web.",
     tags: ["Spring Boot", "Maven", "Bootstrap"],
-    imageUrl: "./springboot.png",
+    imageUrl: "/springboot.png",
   },
 ] as const;
 
