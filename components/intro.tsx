@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
@@ -16,24 +15,20 @@ export default function Intro() {
   const { ref } = useSectionInView("Home", 0.5);
   const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
   const centerIndex = Math.floor(images.length / 2);
-  // State for the responsive initial scale
+
   const [initialScale, setInitialScale] = useState(1);
 
-  // Adjust the initial scale based on the viewport width
   useEffect(() => {
     const updateScale = () => {
       if (window.innerWidth < 640) {
-        // Tailwind's 'sm' breakpoint
         setInitialScale(0.4);
       } else if (window.innerWidth < 768) {
-        // Tailwind's 'md' breakpoint
         setInitialScale(0.7);
       } else {
         setInitialScale(0.8);
       }
     };
 
-    // Set the scale initially and on window resize
     updateScale();
     window.addEventListener("resize", updateScale);
     return () => window.removeEventListener("resize", updateScale);
@@ -47,7 +42,7 @@ export default function Intro() {
       <motion.div
         initial={{ opacity: 0, y: -100 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ type: "spring", delay: 0.3 }}
+        transition={{ type: "keyframes", delay: 0.3 }}
         className="flex items-center justify-center gap-1 mb-7 sm:gap-4 md:gap-9 lg:gap-12 "
       >
         {images.map((image, index) => (
@@ -158,153 +153,3 @@ export default function Intro() {
     </section>
   );
 }
-
-// import React, { useEffect, useState } from "react";
-// import Image from "next/image";
-// import { motion } from "framer-motion";
-// import Link from "next/link";
-// import { BsArrowRight, BsLinkedin } from "react-icons/bs";
-// import { HiDownload } from "react-icons/hi";
-// import { FaGithubSquare } from "react-icons/fa";
-// import { TypeAnimation } from "react-type-animation";
-// import { useSectionInView } from "@/lib/hooks"; // Assumed custom hook
-// import { useActiveSectionContext } from "@/context/active-section-context"; // Assumed context
-// import { images } from "@/lib/data"; // Your images array
-
-// export default function IntroWithImageStack() {
-//   const { ref } = useSectionInView("Home", 0.5);
-//   const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
-
-//   const centerIndex = Math.floor(images.length / 2);
-//   const [initialScale, setInitialScale] = useState(1.5);
-
-//   useEffect(() => {
-//     function updateScale() {
-//       if (window.innerWidth < 640) {
-//         setInitialScale(1.1);
-//       } else if (window.innerWidth < 768) {
-//         setInitialScale(1.3);
-//       } else {
-//         setInitialScale(1.5);
-//       }
-//     }
-
-//     updateScale();
-//     window.addEventListener("resize", updateScale);
-//     return () => window.removeEventListener("resize", updateScale);
-//   }, []);
-
-//   return (
-//     <section
-//       ref={ref}
-//       id="home"
-//       className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]"
-//     >
-//       {/* Image Stack */}
-//       <div className="flex items-center justify-center h-screen gap-2 sm:gap-4 md:gap-9 lg:gap-12">
-//         {images.map((image, index) => (
-//           <motion.div
-//             key={index}
-//             initial={{
-//               opacity: index === centerIndex ? 1 : 0,
-//               scale: initialScale,
-//             }}
-//             animate={{
-//               x: index === centerIndex ? 0 : index < centerIndex ? -50 : 50,
-//               opacity: index === centerIndex ? 1 : 0,
-//               scale: index === centerIndex ? 1 : initialScale,
-//             }}
-//             transition={{
-//               x: { type: "spring", stiffness: 100, damping: 10 },
-//               opacity: { duration: 1 },
-//               scale: { duration: 1 },
-//             }}
-//             className={`overflow-hidden ${
-//               index === centerIndex ? "z-10" : "z-0"
-//             }`}
-//           >
-//             {/* Adjust the size of the middle image as needed */}
-//             <Image
-//               src={image}
-//               alt={`Image ${index}`}
-//               width={index === centerIndex ? 100 : 50}
-//               height={index === centerIndex ? 100 : 50}
-//               className={`object-cover ${
-//                 index === centerIndex
-//                   ? "rounded-full border-[0.35rem] border-white shadow-xl"
-//                   : ""
-//               }`}
-//             />
-//           </motion.div>
-//         ))}
-//       </div>
-
-//       {/* Intro Text and Links */}
-//       <div className="mt-10">
-//         <h1 className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl text-center">
-//           <span>
-//             <TypeAnimation
-//               sequence={[
-//                 "Hello, I'm [Your Name].",
-//                 1200,
-//                 "I am a Software Developer.",
-//                 1200,
-//                 "I enjoy building applications.",
-//                 1200,
-//               ]}
-//               wrapper="span"
-//               speed={40}
-//               className="text-6xl font-bold"
-//               repeat={Infinity}
-//             />
-//           </span>
-//         </h1>
-//         <motion.div
-//           className="flex flex-col items-center justify-center gap-4 px-4 text-lg font-medium sm:flex-row"
-//           initial={{ opacity: 0, y: 100 }}
-//           animate={{ opacity: 1, y: 0 }}
-//           transition={{
-//             delay: 0.1,
-//           }}
-//         >
-//           <Link
-//             href="#contact"
-//             className="flex items-center gap-2 py-3 text-white transition bg-gray-900 rounded-full outline-none group px-7 focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-10"
-//             onClick={() => {
-//               setActiveSection("Contact");
-//               setTimeOfLastClick(Date.now());
-//             }}
-//           >
-//             Contact me here{" "}
-//             <BsArrowRight className="transition opacity-70 group-hover:translate-x-1" />
-//           </Link>
-
-//           <a
-//             className="flex items-center gap-2 py-3 transition bg-white rounded-full outline-none cursor-pointer group px-7 focus:scale-110 hover:scale-110 active:scale-105 borderBlack dark:bg-white/10"
-//             href="/Resume_Mani_SDE.pdf"
-//             download
-//           >
-//             Download Resume{" "}
-//             <HiDownload className="transition opacity-60 group-hover:translate-y-1" />
-//           </a>
-
-//           <a
-//             className="bg-white p-4 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
-//             href="https://www.linkedin.com/in/mani-sreekar-p/"
-//             target="_blank"
-//           >
-//             <BsLinkedin />
-//           </a>
-
-//           <a
-//             className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
-//             href="https://github.com/manisreekar"
-//             target="_blank"
-//           >
-//             <FaGithubSquare />
-//           </a>
-//         </motion.div>
-//       </div>
-//     </section>
-//   );
-// }
