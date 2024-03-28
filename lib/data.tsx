@@ -51,7 +51,7 @@ export const experiencesData = [
       <div className="m-0 font-semibold capitalize">
         CVR College of Engineering
         <br />
-        Bachelor's in Computer Science
+        Bachelor&apos;s in Computer Science
       </div>
     ),
     location: "Hyderabad, India",
@@ -118,7 +118,7 @@ export const experiencesData = [
       <div className="m-0 font-semibold capitalize">
         Arizona State University
         <br />
-        Masters's in Computer Science
+        Masters&apos;s in Computer Science
       </div>
     ),
     location: "Tempe, Arizona",
