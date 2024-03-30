@@ -51,8 +51,10 @@ export default function Project({
           height="192"
           width="192"
           alt="Project Images"
+          quality={100}
           src={imageUrl}
-          className="bg-white border-[0.4rem] border-white absolute hidden sm:block top-8 -right-40 w-[28.25rem] rounded-t-lg shadow-2xl
+          unoptimized
+          className="bg-white border-[0.4rem] object object-cover border-white absolute hidden sm:block top-8 -right-40 w-[28.25rem] rounded-t-lg shadow-2xl
         transition 
         group-hover:scale-[1.04]
         group-hover:-translate-x-3

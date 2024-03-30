@@ -18,7 +18,7 @@ const About = () => {
 
   const itemVariants = {
     hidden: { opacity: 0, x: 40 },
-    show: { opacity: 1, x: 0, transition: { duration: 0.5 } },
+    show: { opacity: 1, x: 0, transition: { duration: 0.3 } },
   };
   return (
     <motion.section

@@ -135,7 +135,7 @@ export default function Intro() {
                     2100,
                     "Hello, I'm Mani Sreekar.",
                     1000,
-                    "I am Software Developer.",
+                    "I am a Software Developer.",
                     1200,
                     "I love building applications!",
                     1000,
@@ -194,7 +194,7 @@ export default function Intro() {
               <FaGithubSquare />
             </a>
           </motion.div>
-          <div className="flex flex-row gap-2 mt-10 ">
+          <div className="flex flex-row gap-4 mt-10 ">
             <h1 className="font-mono">Built with</h1>
             <Image src="/logo512.png" height="30" width="30" alt="icon" />
             <Image src="/nextjs_icon.png" height="30" width="30" alt="icon" />
