@@ -36,7 +36,7 @@ export default function Intro() {
   function BlobComponent() {
     return (
       <motion.div
-        className="w-[225px] h-[225px] m-[20px] bg-cover bg-center sm:w-[300px] sm:h-[300px]"
+        className="w-[195px] h-[195px] m-[20px] bg-cover bg-center sm:w-[300px] sm:h-[300px]"
         variants={blobVariants}
         animate="animate"
         style={{
