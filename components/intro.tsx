@@ -159,7 +159,7 @@ export default function Intro() {
           >
             <Link
               href="#contact"
-              className="flex items-center gap-2 py-3 text-white transition bg-gray-900 rounded-full outline-none group px-7 focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-10"
+              className="z-10 flex items-center gap-2 py-3 text-white transition bg-gray-900 rounded-full outline-none group px-7 focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-10"
               onClick={() => {
                 setActiveSection("Contact");
                 setTimeOfLastClick(Date.now());
@@ -170,8 +170,8 @@ export default function Intro() {
             </Link>
 
             <a
-              className="flex items-center gap-2 py-3 transition bg-white rounded-full outline-none cursor-pointer group px-7 focus:scale-110 hover:scale-110 active:scale-105 borderBlack dark:bg-white/10"
-              href="/Resume_Mani_SDE.pdf"
+              className="z-10 flex items-center gap-2 py-3 transition bg-white rounded-full outline-none cursor-pointer group px-7 focus:scale-110 hover:scale-110 active:scale-105 borderBlack dark:bg-white/10"
+              href="/Resume_SDE.pdf"
               download
             >
               Download Resume{" "}
