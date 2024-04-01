@@ -2,6 +2,7 @@ import React from "react";
 import { LuGraduationCap } from "react-icons/lu";
 import { RiReactjsFill } from "react-icons/ri";
 import { IoAnalyticsOutline } from "react-icons/io5";
+import { BiLogoSpringBoot } from "react-icons/bi";
 
 export const images = [
   "/logo512.png",
@@ -41,23 +42,71 @@ export const experiencesData = [
   {
     title: (
       <div className="m-0 font-semibold capitalize">
-        CVR College of Engineering
+        Arizona State University
         <br />
-        Bachelor&apos;s in Computer Science
+        Technology Consultant
+      </div>
+    ),
+    location: "Arizona, United States",
+    description: (
+      <div className="!mt-1 !font-normal text-gray-700 dark:text-white/75">
+        - Led the frontend development of an asset usage platform and ticket
+        management website with React and Redux.
+        <br />
+        - Developed scalable microservices with Spring Boot, improving
+        functionality across websites and setting the stage for future
+        integrations.
+        <br />- Played a key role in system maintenance and troubleshooting,
+        reducing production issues by 36%.
+      </div>
+    ),
+    icon: <BiLogoSpringBoot />,
+    date: "Dec 2022 - May 2024",
+  },
+
+  {
+    title: (
+      <div className="m-0 font-semibold capitalize">
+        Arizona State University
+        <br />
+        Masters&apos;s in Computer Science
+      </div>
+    ),
+    location: "Arizona, United States",
+    description: (
+      <div className="!mt-1 !font-normal text-gray-700 dark:text-white/75">
+        {" "}
+        <div className="font-semibold">CGPA : 4/4</div>
+        <span className="font-semibold">Main Courses:</span> Foundations of
+        Algorithms, Mobile Computing, Data Mining, Applications of Blockchain,
+        Data Processing at Scale
+      </div>
+    ),
+    icon: <LuGraduationCap />,
+    date: "Aug 2022 - May 2024",
+  },
+
+  {
+    title: (
+      <div className="m-0 font-semibold capitalize">
+        Synchrony Financial
+        <br />
+        Senior Data Analyst
       </div>
     ),
     location: "Hyderabad, India",
     description: (
       <div className="!mt-1 !font-normal text-gray-700 dark:text-white/75">
-        {" "}
-        <div className="font-semibold">CGPA : 9.55/10</div>
-        <span className="font-semibold">Main Courses:</span> Design and
-        Algorithm Analysis, Operating Systems, Data Structures, Web
-        Technologies, Software Engineering, DBMS
+        - Implemented Decision Trees Algorithms to reduce true name fraud by
+        20%, preventing 50 incidents per client.
+        <br /> - Cut customer queuing by 9% and saved $400,000 using data
+        analysis and fraud strategies.
+        <br />- Led the shift from Excel monitoring to Tableau, speeding up
+        decision-making by 17%.
       </div>
     ),
-    icon: <LuGraduationCap />,
-    date: "Aug 2017 - March 2021",
+    icon: <IoAnalyticsOutline />,
+    date: "June 2021 - May 2022",
   },
   {
     title: (
@@ -86,45 +135,23 @@ export const experiencesData = [
   {
     title: (
       <div className="m-0 font-semibold capitalize">
-        Synchrony Financial
+        CVR College of Engineering
         <br />
-        Senior Data Analyst
+        Bachelor&apos;s in Computer Science
       </div>
     ),
     location: "Hyderabad, India",
     description: (
       <div className="!mt-1 !font-normal text-gray-700 dark:text-white/75">
-        - Implemented Decision Trees Algorithms to reduce true name fraud by
-        20%, preventing 50 incidents per client.
-        <br /> - Cut customer queuing by 9% and saved $400,000 using data
-        analysis and fraud strategies.
-        <br />- Led the shift from Excel monitoring to Tableau, speeding up
-        decision-making by 17%.
-      </div>
-    ),
-    icon: <IoAnalyticsOutline />,
-    date: "June 2021 - May 2022",
-  },
-  {
-    title: (
-      <div className="m-0 font-semibold capitalize">
-        Arizona State University
-        <br />
-        Masters&apos;s in Computer Science
-      </div>
-    ),
-    location: "Tempe, Arizona",
-    description: (
-      <div className="!mt-1 !font-normal text-gray-700 dark:text-white/75">
         {" "}
-        <div className="font-semibold">CGPA : 4/4</div>
-        <span className="font-semibold">Main Courses:</span> Foundations of
-        Algorithms, Mobile Computing, Data Mining, Applications of Blockchain,
-        Data Processing at Scale
+        <div className="font-semibold">CGPA : 9.55/10</div>
+        <span className="font-semibold">Main Courses:</span> Design and
+        Algorithm Analysis, Operating Systems, Data Structures, Web
+        Technologies, Software Engineering, DBMS
       </div>
     ),
     icon: <LuGraduationCap />,
-    date: "Aug 2022 - May 2024",
+    date: "Aug 2017 - March 2021",
   },
 ] as const;
 
