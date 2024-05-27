@@ -50,14 +50,14 @@ export const experiencesData = [
     location: "Arizona, United States",
     description: (
       <div className="!mt-1 !font-normal text-gray-700 dark:text-white/75">
-        - Led the frontend development of an asset usage platform and ticket
-        management website with React and Redux.
-        <br />
-        - Developed scalable microservices with Spring Boot, improving
-        functionality across websites and setting the stage for future
-        integrations.
-        <br />- Played a key role in system maintenance and troubleshooting,
-        reducing production issues by 36%.
+        - Revitalized a legacy JavaScript application by transitioning to React,
+        boosting scalability and performance by 30%. <br />
+        - Revamped the frontend codebase by designing and implementing reusable
+        components, enhancing efficiency and modularity. <br />
+        - Engineered scalable microservices using Spring Boot, and established
+        CI/CD pipelines with AWS, reducing downtime by 17%. <br />- Managed and
+        played a key role in system maintenance and code review, reducing
+        production issues by 36%.
       </div>
     ),
     icon: <BiLogoSpringBoot />,
@@ -91,18 +91,21 @@ export const experiencesData = [
       <div className="m-0 font-semibold capitalize">
         Synchrony Financial
         <br />
-        Senior Data Analyst
+        Senior Analyst
       </div>
     ),
     location: "Hyderabad, India",
     description: (
       <div className="!mt-1 !font-normal text-gray-700 dark:text-white/75">
-        - Implemented Decision Trees Algorithms to reduce true name fraud by
-        20%, preventing 50 incidents per client.
-        <br /> - Cut customer queuing by 9% and saved $400,000 using data
-        analysis and fraud strategies.
-        <br />- Led the shift from Excel monitoring to Tableau, speeding up
-        decision-making by 17%.
+        - Developed application verification dashboards using React, enhancing
+        processing efficiency by 20%. <br />
+        - Improved user interface design to enhance navigation and user
+        satisfaction. <br />
+        - Architected robust Spring Boot RESTful APIs, reducing credit card
+        approval times by 50%. <br />
+        - Optimized database interactions, enhancing data retrieval and storage
+        efficiency. <br />- Managed certificate retrieval and keystore updates,
+        maintaining robust server communication and data security.
       </div>
     ),
     icon: <IoAnalyticsOutline />,
@@ -124,9 +127,12 @@ export const experiencesData = [
         <br />
         - Enhanced SQL methods to boost efficiency by 25%.
         <br />
-        - Developeda MERN Stack website, increasing productivity by 15%.
-        <br />- Integrated dashboards for better filtration and accuracy,
-        raising ticket resolution by 34%.
+        - Implemented Decision Trees Algorithms to reduce true name fraud by
+        20%, preventing 50 incidents per client.
+        <br /> - Cut customer queuing by 9% and saved $400,000 using data
+        analysis and fraud strategies.
+        <br />- Led the shift from Excel monitoring to Tableau, speeding up
+        decision-making by 17%.
       </div>
     ),
     icon: <RiReactjsFill />,
