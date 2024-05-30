@@ -49,16 +49,17 @@ export const experiencesData = [
     ),
     location: "Arizona, United States",
     description: (
-      <div className="!mt-1 !font-normal text-gray-700 dark:text-white/75">
-        - Revitalized a legacy JavaScript application by transitioning to React,
-        boosting scalability and performance by 30%. <br />
-        - Revamped the frontend codebase by designing and implementing reusable
-        components, enhancing efficiency and modularity. <br />
-        - Engineered scalable microservices using Spring Boot, and established
-        CI/CD pipelines with AWS, reducing downtime by 17%. <br />- Managed and
-        played a key role in system maintenance and code review, reducing
-        production issues by 36%.
-      </div>
+      // <div className="!mt-1 !font-normal text-gray-700 dark:text-white/75">
+      //   - Revitalized a legacy JavaScript application by transitioning to React,
+      //   boosting scalability and performance by 30%. <br />
+      //   - Revamped the frontend codebase by designing and implementing reusable
+      //   components, enhancing efficiency and modularity. <br />
+      //   - Engineered scalable microservices using Spring Boot, and established
+      //   CI/CD pipelines with AWS, reducing downtime by 17%. <br />- Managed and
+      //   played a key role in system maintenance and code review, reducing
+      //   production issues by 36%.
+      // </div>
+      <div></div>
     ),
     icon: <BiLogoSpringBoot />,
     date: "Dec 2022 - May 2024",
@@ -96,17 +97,18 @@ export const experiencesData = [
     ),
     location: "Hyderabad, India",
     description: (
-      <div className="!mt-1 !font-normal text-gray-700 dark:text-white/75">
-        - Developed application verification dashboards using React, enhancing
-        processing efficiency by 20%. <br />
-        - Improved user interface design to enhance navigation and user
-        satisfaction. <br />
-        - Architected robust Spring Boot RESTful APIs, reducing credit card
-        approval times by 50%. <br />
-        - Optimized database interactions, enhancing data retrieval and storage
-        efficiency. <br />- Managed certificate retrieval and keystore updates,
-        maintaining robust server communication and data security.
-      </div>
+      // <div className="!mt-1 !font-normal text-gray-700 dark:text-white/75">
+      //   - Developed application verification dashboards using React, enhancing
+      //   processing efficiency by 20%. <br />
+      //   - Improved user interface design to enhance navigation and user
+      //   satisfaction. <br />
+      //   - Architected robust Spring Boot RESTful APIs, reducing credit card
+      //   approval times by 50%. <br />
+      //   - Optimized database interactions, enhancing data retrieval and storage
+      //   efficiency. <br />- Managed certificate retrieval and keystore updates,
+      //   maintaining robust server communication and data security.
+      // </div>
+      <div></div>
     ),
     icon: <IoAnalyticsOutline />,
     date: "June 2021 - May 2022",
@@ -121,19 +123,20 @@ export const experiencesData = [
     ),
     location: "Hyderabad, India",
     description: (
-      <div className="!mt-1 !font-normal text-gray-700 dark:text-white/75">
-        - Created Tableau dashboards for ticket management and improved SQL data
-        handling.
-        <br />
-        - Enhanced SQL methods to boost efficiency by 25%.
-        <br />
-        - Implemented Decision Trees Algorithms to reduce true name fraud by
-        20%, preventing 50 incidents per client.
-        <br /> - Cut customer queuing by 9% and saved $400,000 using data
-        analysis and fraud strategies.
-        <br />- Led the shift from Excel monitoring to Tableau, speeding up
-        decision-making by 17%.
-      </div>
+      // <div className="!mt-1 !font-normal text-gray-700 dark:text-white/75">
+      //   - Created Tableau dashboards for ticket management and improved SQL data
+      //   handling.
+      //   <br />
+      //   - Enhanced SQL methods to boost efficiency by 25%.
+      //   <br />
+      //   - Implemented Decision Trees Algorithms to reduce true name fraud by
+      //   20%, preventing 50 incidents per client.
+      //   <br /> - Cut customer queuing by 9% and saved $400,000 using data
+      //   analysis and fraud strategies.
+      //   <br />- Led the shift from Excel monitoring to Tableau, speeding up
+      //   decision-making by 17%.
+      // </div>
+      <div></div>
     ),
     icon: <RiReactjsFill />,
     date: "Oct 2020 - May 2021",
