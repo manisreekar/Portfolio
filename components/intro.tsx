@@ -71,7 +71,7 @@ export default function Intro() {
     <section
       ref={ref}
       id="home"
-      className="flex justify-center items-center mb-28 max-w-[50rem]text-center sm:mb-0 scroll-mt-[100rem]"
+      className="flex justify-center items-center mb-28 max-w-[50rem]text-center sm:mb-0 scroll-mt-[100rem] pt-20"
     >
       <motion.div
         initial={{ opacity: 0, y: -100 }}
