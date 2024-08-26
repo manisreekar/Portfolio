@@ -47,7 +47,7 @@ export const experiencesData = [
         Associate Developer
       </div>
     ),
-    location: "Arizona, United States",
+    location: "Texas, United States",
     description: <div></div>,
     icon: <RiReactjsFill />,
     date: "May 2024 - Present",
