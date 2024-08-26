@@ -45,9 +45,8 @@ const About = () => {
           <span className="font-medium">
             Master&apos;s in Computer Science from Arizona State University{" "}
           </span>{" "}
-          and hands-on experience in industry-leading tools and technologies,
-          including <span className="font-medium">MERN Stack, </span> I am
-          equipped to tackle diverse challenges in software development.
+          and hands-on experience in industry-leading tools and technologies, I
+          am equipped to tackle diverse challenges in software development.
         </motion.p>
         <motion.p variants={itemVariants} className="mb-3">
           <span className="italic">
