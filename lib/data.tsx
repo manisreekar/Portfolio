@@ -42,25 +42,35 @@ export const experiencesData = [
   {
     title: (
       <div className="m-0 font-semibold capitalize">
+        Assembli AI
+        <br />
+        Software Engineer
+      </div>
+    ),
+    location: "Remote, United States",
+    description: (
+      <div>
+        − Designing and implementing a Proposal Management System tailored for
+        managing construction estimates, leveraging a React.js, Flask, and
+        PostgreSQL. <br />− Developed a Dashboard Component to provide real-time
+        visibility into draft and approved construction proposals, improving
+        efficiency in tracking and management. <br />− Built a Dynamic Template
+        Builder allowing users to customize proposal templates by selecting,
+        reordering, and saving construction-specific components.
+      </div>
+    ),
+    icon: <RiReactjsFill />,
+    date: "Nov 2024 - Present",
+  },
+  {
+    title: (
+      <div className="m-0 font-semibold capitalize">
         Inventech Solutions LLC
         <br />
         Associate Developer
       </div>
     ),
     location: "Texas, United States",
-    description: <div></div>,
-    icon: <RiReactjsFill />,
-    date: "May 2024 - Present",
-  },
-  {
-    title: (
-      <div className="m-0 font-semibold capitalize">
-        Arizona State University
-        <br />
-        Technology Consultant
-      </div>
-    ),
-    location: "Arizona, United States",
     description: (
       <div className="!mt-1 !font-normal text-gray-700 dark:text-white/75">
         - Revitalized a legacy JavaScript application by transitioning to React,
@@ -74,7 +84,7 @@ export const experiencesData = [
       </div>
     ),
     icon: <BiLogoSpringBoot />,
-    date: "Dec 2022 - May 2024",
+    date: "Jun 2024 - Present",
   },
 
   {
