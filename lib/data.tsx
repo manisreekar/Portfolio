@@ -77,10 +77,10 @@ export const experiencesData = [
         boosting scalability and performance by 30%. <br />
         - Revamped the frontend codebase by designing and implementing reusable
         components, enhancing efficiency and modularity. <br />
-        - Engineered scalable microservices using Spring Boot, and established
-        CI/CD pipelines with AWS, reducing downtime by 17%. <br />- Managed and
-        played a key role in system maintenance and code review, reducing
-        production issues by 36%.
+        - Engineered scalable microservices using Node.js, and established CI/CD
+        pipelines with AWS, reducing downtime by 17%. <br />- Managed and played
+        a key role in system maintenance and code review, reducing production
+        issues by 36%.
       </div>
     ),
     icon: <BiLogoSpringBoot />,
